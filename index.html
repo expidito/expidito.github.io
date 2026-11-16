@@ -13,23 +13,36 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="wordmark" href="index.html" aria-label="Kadr home"><img class="brand-icon" src="kadr-icon-1024.png" width="44" height="44" alt="">Kadr<span>for macOS</span></a>
-    <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Overview</a><a href="support/index.html">Support</a><a href="privacy/index.html">Privacy</a><a href="terms/index.html">Terms</a></nav>
+    <details class="site-menu">
+      <summary>Menu <span aria-hidden="true">+</span></summary>
+      <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Overview</a><a href="support/index.html">Support</a><a href="privacy/index.html">Privacy Policy</a><a href="terms/index.html">Terms of Use</a></nav>
+    </details>
+    <a class="wordmark" href="index.html" aria-label="Kadr home"><img class="brand-icon" src="kadr-icon-1024.png" width="40" height="40" alt="">Kadr</a>
+    <a class="header-link" href="support/index.html">Support <span aria-hidden="true">↗</span></a>
   </header>
   <main id="main" class="wrap" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-icon" src="kadr-icon-1024.png" width="112" height="112" alt="Kadr app icon">
+      <div class="orbit" aria-hidden="true">
+        <div class="orbit-card orbit-capture"><span class="capture-glyph"></span><small>Capture Area</small></div>
+        <div class="orbit-card orbit-text"><span>Aa</span><small>Recognize Text</small></div>
+        <div class="orbit-card orbit-pdf"><span>PDF</span><small>Fill &amp; sign</small></div>
+        <div class="orbit-card orbit-arrow"><span>↗</span></div>
+        <div class="orbit-card orbit-video"><span class="record-glyph"></span><small>Screen Recording</small></div>
+        <div class="orbit-card orbit-colors"><i></i><i></i><i></i><i></i></div>
+        <div class="orbit-card orbit-keys"><span>⌘ 2</span></div>
+        <div class="orbit-card orbit-mp4"><span>MP4</span><small>Video Editor</small></div>
+      </div>
+      <div class="hero-content">
       <p class="eyebrow">Screenshots. Screen recording. On your Mac.</p>
       <h1 id="hero-title">Capture a moment.<br><span>Make it clear.</span></h1>
       <p class="intro">Take a screenshot, add an arrow, copy the text, or record a walkthrough. Kadr brings it together in your menu bar.</p>
+      <a class="shortcut-pill" href="support/index.html"><kbd aria-label="Shift Command 2">⇧ ⌘ 2</kbd><span>Capture Area</span><span class="shortcut-arrow" aria-hidden="true">↗</span></a>
+      <a class="button" href="#features-title">Explore Kadr <span aria-hidden="true">↓</span></a>
       <p class="release-note"><span class="status-dot" aria-hidden="true"></span>Preparing for release on the Mac App Store</p>
       <p class="requirements">macOS 15 Sequoia or later · Apple Silicon &amp; Intel</p>
+      </div>
     </section>
 
-    <section class="capture-strip" aria-label="Capture shortcut">
-      <div><p class="eyebrow">Start with a shortcut</p><h2>A screenshot, just a few keys away.</h2><p>Press Shift–Command–2, then select an area or click a window.</p></div>
-      <kbd aria-label="Shift Command 2">⇧ ⌘ 2</kbd>
-    </section>
 
     <section class="section" aria-labelledby="features-title">
       <div class="section-heading"><p class="eyebrow">One place to work</p><h2 id="features-title">From capture to the finishing touch.</h2></div>
