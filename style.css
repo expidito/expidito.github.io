@@ -52,16 +52,11 @@ h2 { font-size: clamp(36px, 4.6vw, 64px); font-weight: 650; margin-bottom: 24px;
 h3 { font-size: 25px; font-weight: 600; letter-spacing: -.04em; margin-bottom: 16px; }
 p { margin-bottom: 1.2em; }
 .eyebrow { color: var(--muted); font-weight: 550; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 24px; }
-.hero { min-height: 790px; position: relative; display: grid; align-items: center; text-align: center; padding: 110px 0 100px; isolation: isolate; }
+.hero { min-height: 700px; position: relative; display: grid; align-items: center; text-align: center; padding: 80px 0; isolation: isolate; }
 .hero-content { position: relative; z-index: 1; width: 100%; max-width: 1000px; margin-inline: auto; }
 .hero h1 span { white-space: nowrap; }
 .intro { max-width: 590px; font-size: clamp(17px, 1.5vw, 20px); color: var(--muted); line-height: 1.6; }
 .hero .intro { margin: 0 auto 26px; max-width: 570px; }
-.shortcut-pill { display: flex; align-items: center; gap: 20px; width: min(480px, 100%); margin: 0 auto 26px; padding: 9px 10px 9px 25px; border: 1px solid var(--line); border-radius: 100px; background: var(--surface); box-shadow: 0 0 0 7px #80808006; text-decoration: none; font-size: 18px; }
-.shortcut-pill kbd { color: var(--ink); font-size: 21px; }
-.shortcut-pill > span:not(.shortcut-arrow) { color: var(--muted); }
-.shortcut-arrow { display: grid; place-items: center; margin-left: auto; width: 46px; height: 46px; flex-shrink: 0; border: 1px solid var(--accent); border-radius: 50%; background: var(--accent); color: var(--action-ink); font-size: 25px; }
-.shortcut-pill:hover .shortcut-arrow { background: var(--accent-hover); border-color: var(--accent-hover); }
 kbd { font: inherit; white-space: nowrap; }
 .button { display: inline-flex; align-items: center; gap: 25px; background: var(--accent); color: var(--action-ink); border-radius: 100px; padding: 17px 28px; font-size: 15px; font-weight: 600; text-decoration: none; }
 .release-note { display: flex; justify-content: center; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; margin: 22px 0 6px; }
@@ -142,7 +137,7 @@ code { overflow-wrap: anywhere; font-size: .86em; }
 }
 @media (max-width: 1000px) {
   .wrap { width: calc(100% - 48px); }
-  .hero { min-height: 740px; padding: 130px 0 95px; }
+  .hero { min-height: 660px; padding: 100px 0 85px; }
   .orbit-card { scale: .8; }
   .orbit-capture { left: 0; top: 1%; }
   .orbit-pdf { right: 0; top: 0; }
@@ -173,9 +168,6 @@ code { overflow-wrap: anywhere; font-size: .86em; }
   .orbit-pdf { right: -15px; top: -12px; }
   .orbit-text { left: calc(50% - 50px); top: -40px; }
   .orbit-keys, .orbit-colors, .orbit-mp4 { display: none; }
-  .shortcut-pill { gap: 16px; padding-left: 18px; font-size: 16px; max-width: 340px; }
-  .shortcut-pill kbd { font-size: 19px; }
-  .shortcut-arrow { width: 40px; height: 40px; font-size: 22px; }
   .release-note { font-size: 10px; }
   .requirements { font-size: 9px; }
   .section { padding-top: 60px; }
@@ -191,6 +183,50 @@ code { overflow-wrap: anywhere; font-size: .86em; }
   .page-heading h1 { font-size: clamp(38px, 10vw, 60px); }
   .note { padding: 22px; }
 }
+/* Page flow: orient, explore, compare, answer questions, and repeat the main action. */
+.action-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin: 28px 0 0; }
+.button-secondary { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.button-secondary:hover { background: var(--soft); }
+.section-nav { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px 34px; border-block: 1px solid var(--line); padding: 14px 0; }
+.section-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration-color: var(--focus); text-decoration-thickness: 2px; }
+.section-nav a:hover { background: var(--accent); color: var(--action-ink); }
+.feature-grid article { display: flex; flex-direction: column; }
+.feature-grid a { align-self: flex-start; margin-top: auto; background: transparent; color: var(--accent); padding-inline: 0; }
+.feature-grid a:hover { background: transparent; text-decoration-thickness: 2px; }
+.privacy-story { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; max-width: 1080px; margin-inline: auto; }
+.privacy-story > div > p:not(.eyebrow) { color: var(--muted); max-width: 500px; }
+.privacy-facts { margin: 0; }
+.privacy-facts > div { border-bottom: 1px solid var(--line); padding: 24px 0; }
+.privacy-facts dt { font-size: 21px; font-weight: 600; letter-spacing: -.03em; margin-bottom: 8px; }
+.privacy-facts dd { margin: 0; color: var(--muted); font-size: 15px; }
+.section-action { text-align: center; margin-top: 55px; }
+.plan { display: flex; flex-direction: column; }
+.plan-link { align-self: flex-start; margin-top: auto; padding-top: 28px; font-size: 14px; font-weight: 550; text-decoration-color: var(--focus); }
+.pro .plan-link { color: var(--accent); }
+.home-faq { max-width: 900px; margin-inline: auto; }
+.home-faq .document { padding-bottom: 0; }
+.faq-support { margin-top: 26px; text-align: center; font-size: 15px; color: var(--muted); }
+.closing-status { font-size: 12px; margin-top: 24px; }
+.site-footer .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; }
+.footer-links > div { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.footer-links h2 { font-size: 13px; line-height: 1.5; letter-spacing: 0; font-weight: 600; margin-bottom: 3px; }
+.support-topics { margin-bottom: 35px; gap: 8px 24px; }
+.document details:target { outline: 2px solid var(--focus); outline-offset: 6px; border-radius: 5px; }
+@media (max-width: 800px) {
+  .privacy-story { gap: 35px; }
+  .site-footer { flex-direction: column; }
+  .site-footer .footer-links { width: 100%; gap: 20px; }
+}
+@media (max-width: 600px) {
+  .action-row { gap: 12px; }
+  .action-row .button { justify-content: center; width: 100%; max-width: 330px; }
+  .section-nav { gap: 2px 24px; }
+  .section-nav a { font-size: 13px; }
+  .privacy-story { grid-template-columns: 1fr; gap: 10px; }
+  .privacy-story h2 { font-size: 42px; }
+  .section-action { margin-top: 36px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .site-menu summary span { transition: none; }
 }

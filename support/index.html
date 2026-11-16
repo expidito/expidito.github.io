@@ -22,37 +22,45 @@
   </header>
   <main id="main" class="wrap" tabindex="-1">
     <div class="page-heading"><p class="eyebrow">Kadr help</p><h1>Support</h1><p class="intro">Get started, check permissions, and find your files.</p></div>
+    <nav class="section-nav support-topics" aria-label="Support topics"><a href="#getting-started">Get started</a><a href="#permissions">Permissions</a><a href="#text-and-files">Text &amp; files</a><a href="#recording">Recording</a><a href="#subscriptions">Subscriptions</a><a href="#contact">Contact</a></nav>
     <div class="document">
-      <section><h2>Getting started</h2><p>Kadr lives in the menu bar at the top of your screen, with a frame-corners and K icon. It does not appear in the Dock. Opening Kadr again from Finder opens Settings.</p><ol><li>Open Kadr and follow the welcome screen.</li><li>Allow screen recording in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording. Restart Kadr when macOS asks.</li><li>Allow access to your screenshot folder. The default is Desktop; you can choose another folder.</li><li>Camera and microphone permissions are requested when you first enable them for recording.</li></ol><p>Press <kbd>⇧ ⌘ 2</kbd> to capture an area, or <kbd>⇧ ⌘ 1</kbd> to recognize text in an area. Change either shortcut in Settings → Shortcuts.</p></section>
-      <section><h2>Permissions &amp; shortcuts</h2>
+      <section id="getting-started"><h2>Getting started</h2><p>Kadr lives in the menu bar at the top of your screen, with a frame-corners and K icon. It does not appear in the Dock. Opening Kadr again from Finder opens Settings.</p><ol><li>Open Kadr and follow the welcome screen.</li><li>Allow screen recording in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording. Restart Kadr when macOS asks.</li><li>Allow access to your screenshot folder. The default is Desktop; you can choose another folder.</li><li>Camera and microphone permissions are requested when you first enable them for recording.</li></ol><p>Press <kbd>⇧ ⌘ 2</kbd> to capture an area, or <kbd>⇧ ⌘ 1</kbd> to recognize text in an area. Change either shortcut in Settings → Shortcuts.</p></section>
+      <section id="permissions"><h2>Permissions &amp; shortcuts</h2>
         <details><summary>A screenshot fails or shows a permission error</summary><p>Turn Kadr off and on again in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording, then restart Kadr.</p></details>
         <details><summary>macOS asks for screen recording access again</summary><p>macOS 15 and later periodically asks you to confirm screen access. Allow it again to continue using Kadr.</p></details>
         <details><summary>The camera or microphone is missing from a recording</summary><p>Enable Kadr in System Settings → Privacy &amp; Security → Camera or Microphone. You can check permission status in Kadr Settings → Recording.</p></details>
         <details><summary>Kadr asks for access to the screenshot folder again</summary><p>Folder access may be lost if you move or rename the folder. Allow access again, or choose a folder in Settings → Screenshot. If you do not grant access when saving a screenshot, the annotated image stays open. If a recording cannot be saved to the folder, Kadr offers Save As.</p></details>
         <details><summary>A keyboard shortcut does not work</summary><p>Another app may already use it. Choose a different shortcut in Kadr Settings → Shortcuts. To use a macOS screenshot shortcut such as Shift–Command–4, first disable it in System Settings → Keyboard → Keyboard Shortcuts.</p></details>
       </section>
-      <section><h2>Text, files &amp; recording</h2>
-        <details><summary>Translation asks me to download languages</summary><p>macOS needs to download languages before their first use. You can download them ahead of time in System Settings → General → Language &amp; Region → Translation Languages. Recognition and translation then work on your Mac without a network connection.</p></details>
+      <section id="text-and-files"><h2>Text &amp; files</h2>
+        <details id="translation"><summary>Translation asks me to download languages</summary><p>macOS needs to download languages before their first use. You can download them ahead of time in System Settings → General → Language &amp; Region → Translation Languages. Recognition and translation then work on your Mac without a network connection.</p></details>
         <details><summary>How do I change the app language?</summary><p>Choose a language in Kadr Settings → General. The app changes immediately. Click Restart Kadr to update macOS Open, Save, Share, and permission dialogs. Kadr supports English, Ukrainian, Russian, German, Spanish, and French.</p></details>
-        <details><summary>Only part of a PDF opens</summary><p>Kadr opens the first 15 pages. Saving with Whole File preserves the remaining pages as they were. A page with blur is saved as an image, including its form fields. Inserting a PDF into a screenshot uses only its first page.</p></details>
+        <details id="pdf-saving"><summary>Only part of a PDF opens</summary><p>Kadr opens the first 15 pages. Saving with Whole File preserves the remaining pages as they were. A page with blur is saved as an image, including its form fields. Inserting a PDF into a screenshot uses only its first page.</p></details>
+        <details id="file-converter"><summary>What can File Converter convert?</summary><p>Open File Converter from the Kadr menu or capture toolbar. Convert images, documents, audio, and video on your Mac. PDF actions include merging, splitting, extracting, deleting, rotating, compressing, and password protection. Original files stay unchanged.</p></details>
+      </section>
+      <section id="recording"><h2>Screen recording</h2>
         <details><summary>Why is there no sound from other apps?</summary><p>Kadr records microphone audio only. It does not record app or system audio.</p></details>
         <details><summary>Can I pause a recording?</summary><p>Recording cannot be paused.</p></details>
         <details><summary>The teleprompter is visible in Zoom</summary><p>The teleprompter is hidden only from Kadr recordings. Other screen-sharing apps, including Zoom, may capture it.</p></details>
         <details><summary>Where are my screenshots and recordings?</summary><p>In your screenshot folder, which defaults to Desktop. Change it in Settings → Screenshot. Recordings are named “Screen Recording” followed by the start date and time. If you save a project in Recording Ready, a <code>.kadrvideo</code> file is saved alongside the video.</p></details>
       </section>
-      <section><h2>Planned subscriptions</h2><p>Kadr is preparing for release. Purchases and the subscription controls below are planned and are not yet implemented.</p>
+      <section id="subscriptions"><h2>Planned subscriptions</h2><p>Kadr is preparing for release. Purchases and the subscription controls below are planned and are not yet implemented.</p>
         <details><summary>What will Kadr Pro include?</summary><p>An annual subscription for €24.99 in Austria, including VAT, with a one-time 7-day free trial. Pricing elsewhere will be shown in your App Store currency. See the <a href="../index.html#plans-title">Free and Pro plans</a>.</p></details>
         <details><summary>How will I restore purchases?</summary><p>Restore Purchases is planned for the Kadr Pro purchase window and Settings → Subscription. Use the same Apple Account to restore your subscription on another Mac.</p></details>
         <details><summary>How will I cancel or manage a subscription?</summary><p>Use your App Store account settings. Cancel at least 24 hours before the trial or paid period ends to prevent renewal. Paid access continues until the end of the paid period. <a href="https://apps.apple.com/account/subscriptions">Open Apple subscription management</a>.</p></details>
         <details><summary>Will Pro work on more than one Mac, and offline?</summary><p>The planned subscription works on all Macs using the same Apple Account. Family Sharing is not included. A connection is needed for the purchase; macOS stores the latest purchase status for offline use.</p></details>
         <details><summary>Who handles refunds?</summary><p>Apple handles refunds. If a purchase is refunded, Kadr Pro access ends.</p></details>
       </section>
-      <section class="note"><h2>Contact support</h2><p>Email <a href="mailto:kadr.app@icloud.com">kadr.app@icloud.com</a> for help. Include your Kadr version and macOS version. Find your Kadr version in Settings → General.</p></section>
+      <section class="note" id="contact"><h2>Contact support</h2><p>Email <a href="mailto:kadr.app@icloud.com">kadr.app@icloud.com</a> for help. Include your Kadr version and macOS version. Find your Kadr version in Settings → General.</p></section>
     </div>
   </main>
   <footer class="site-footer wrap">
     <p>© 2026 Fedir Alatorskykh</p>
-    <nav aria-label="Footer navigation"><a href="../support/index.html">Support</a><a href="../privacy/index.html">Privacy Policy</a><a href="../terms/index.html">Terms of Use</a></nav>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <div><h2>Explore Kadr</h2><a href="../index.html#features-title">Features</a><a href="../index.html#plans-title">Free &amp; Pro</a><a href="../index.html#faq-title">FAQ</a></div>
+      <div><h2>Help</h2><a href="../support/index.html#getting-started">Getting started</a><a href="../support/index.html">Support</a><a href="../support/index.html#contact">Contact</a></div>
+      <div><h2>Legal</h2><a href="../privacy/index.html">Privacy Policy</a><a href="../terms/index.html">Terms of Use</a></div>
+    </nav>
   </footer>
 </body>
 </html>
