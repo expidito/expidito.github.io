@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="How Kadr handles screenshots, recordings, files, permissions, and planned App Store purchases.">
+  <title>Privacy Policy — Kadr</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="../index.html" aria-label="Kadr home">Kadr<span>for macOS</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html">Overview</a><a href="../support/index.html">Support</a><a href="../privacy/index.html" aria-current="page">Privacy</a><a href="../terms/index.html">Terms</a></nav>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <div class="page-heading"><p class="eyebrow">Your files stay on your Mac</p><h1>Privacy Policy</h1><p class="intro">Kadr does not collect your data or send it to a server.</p></div>
+    <div class="document">
+      <p class="note">Effective date: 16 November 2026. The purchases section describes planned behavior for the upcoming release.</p>
+      <section><h2>About Kadr</h2><p>Kadr is a screenshot and screen recording app for macOS by Fedir Alatorskykh, Austria.</p><p>Kadr has no accounts, registration, analytics, advertising, crash reporting, or third-party libraries. It has no server, makes no network requests, and has no network client permission in its App Sandbox entitlements.</p></section>
+      <section><h2>Screen, camera &amp; microphone</h2><p>Kadr captures your screen only when you start a screenshot or recording. macOS screen recording permission is required. A screenshot stays in memory while its editor is open and becomes a file when you save it. Images and recognized text are copied to the clipboard when you choose Copy, or when you have enabled the corresponding automatic copying setting.</p><p>The background around a recording area uses a blurred screenshot taken when you select the area.</p><p>The camera and microphone are used only for screen recording and only when you enable them. Camera video appears in the exported MP4 and, for a <code>.kadrvideo</code> project, in a separate track within the local project package. A disabled microphone does not record. Kadr does not record app or system audio. You can use a built-in avatar or a photo from your Mac instead of the camera.</p></section>
+      <section><h2>Text recognition &amp; translation</h2><p>Text recognition uses Apple Vision and translation uses Apple Translation. Both run on your Mac. macOS downloads translation languages when needed.</p></section>
+      <section><h2>What is stored locally</h2><p>Kadr stores its settings and working files in its sandbox container: <code>~/Library/Containers/io.github.expidito.kadr/Data</code>.</p><ul><li>Settings include shortcuts, language, screenshot folder and format, toolbar appearance, camera and microphone choices, recording settings, teleprompter text, and permissions for folders you select.</li><li>Saved signatures are in <code>Application Support/Kadr/Signatures</code>.</li><li>Your custom avatar and recording background are stored as <code>Avatar.png</code> and <code>Backdrop.png</code> in <code>Application Support/Kadr</code>.</li><li>Video editor working projects are in <code>Application Support/Kadr/VideoProjects</code>.</li><li>Temporary sharing, recording, conversion, and editing files are kept in the container’s temporary folder and removed by Kadr or macOS.</li></ul><p>Screenshots, recordings, and converted files are saved only to locations you choose. The default screenshot folder is Desktop. Kadr does not keep its own screenshot history.</p></section>
+      <section><h2>Your files &amp; permissions</h2><p>Kadr opens images, PDFs, and videos when you select them, drag them into Kadr, or open them through Finder. macOS grants access to those files. The app can write only to its container and folders you authorize.</p><p>The converter and PDF actions leave your original files unchanged. PDF passwords are used through macOS PDFKit; Kadr does not store them in settings or Keychain.</p><p>Open at login is enabled only when you turn it on in Settings. You can manage screen, camera, and microphone permissions in System Settings → Privacy &amp; Security.</p></section>
+      <section><h2>When you choose to share</h2><p>Share passes a screenshot or file to the macOS service you select, such as AirDrop, Messages, or Mail. That service then handles the content. Open With passes the file to your chosen app. Copy places an image or text on the macOS clipboard.</p></section>
+      <section><h2>App Store purchases — planned</h2><p>Purchases are not yet implemented. Apple will handle payments through the App Store; Kadr will not receive payment details. StoreKit will provide subscription and trial status, expiry, and refund status. StoreKit 2 verifies purchases without a Kadr server, and macOS stores the latest purchase status for offline use.</p></section>
+      <section><h2>This website</h2><p>This website uses no analytics, cookies, external fonts, or third-party embedded content. Its pages and stylesheet are hosted on GitHub Pages. Links to Apple open Apple’s websites only when you follow them.</p></section>
+      <section class="note"><h2>Privacy questions</h2><p>For questions about this policy, email <a href="mailto:kadr.app@icloud.com">kadr.app@icloud.com</a>.</p></section>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <p>© 2026 Fedir Alatorskykh</p>
+    <nav aria-label="Footer navigation"><a href="../support/index.html">Support</a><a href="../privacy/index.html">Privacy Policy</a><a href="../terms/index.html">Terms of Use</a></nav>
+  </footer>
+</body>
+</html>
