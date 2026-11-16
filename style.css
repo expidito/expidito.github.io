@@ -18,7 +18,9 @@ a:hover { text-decoration-thickness: 2px; }
 a:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; border-radius: 3px; }
 .wrap { width: min(1080px, calc(100% - 64px)); margin-inline: auto; }
 .site-header { min-height: 108px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
-.wordmark { color: var(--ink); font-size: 29px; font-weight: 750; letter-spacing: -.06em; text-decoration: none; }
+.wordmark { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); font-size: 29px; font-weight: 750; letter-spacing: -.06em; text-decoration: none; }
+.brand-icon { display: block; flex-shrink: 0; }
+.hero-icon { display: block; width: 112px; height: auto; margin: -12px 0 22px -11px; }
 .wordmark span { margin-left: 15px; font-size: 13px; letter-spacing: 0; font-weight: 450; color: var(--muted); }
 nav { display: flex; flex-wrap: wrap; gap: 25px; }
 nav a { color: var(--muted); font-size: 14px; text-decoration: none; }

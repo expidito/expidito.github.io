@@ -18,7 +18,8 @@ The directory URLs above remain the permanent public addresses.
 ## Before the App Store release
 
 - Verify all planned subscription text against the released app.
-- Add the final icon, real screenshots, and App Store URL when supplied.
+- Add real screenshots and the App Store URL when supplied.
+- Replace `kadr-icon-1024.png` when a revised app icon is supplied.
 
 See `AGENTS.md` for editing rules. Keep the local `SITE-BRIEF.md` and Kadr
 application code out of this public repository.
